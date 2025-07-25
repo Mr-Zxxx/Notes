@@ -214,7 +214,7 @@ git config --global user.email "your_email@example.com"
 
 ------
 
-#  连接本地仓库与 GitHub
+###  三、连接本地仓库与 GitHub
 
 #### 场景 1：从零开始新仓库
 
@@ -352,7 +352,7 @@ file:.git/config                  your.email@example.com
 
 ------
 
-### ⚠️ 优先级说明
+### 优先级说明
 
 Git 配置按优先级生效（从高到低）：
 
@@ -368,7 +368,7 @@ Git 配置按优先级生效（从高到低）：
 
 ------
 
-### 🔍 验证示例
+### 验证示例
 
 ```
 $ git config --global user.name
@@ -381,7 +381,7 @@ Jane Smith  # 此仓库覆盖了全局配置
 
 ------
 
-### 💡 实用技巧
+### 实用技巧
 
 1. **快速查看当前用户**：
 
@@ -413,7 +413,7 @@ Jane Smith  # 此仓库覆盖了全局配置
 
 ---
 
-## ✅ 1. **软（Soft）**
+## 1. **软（Soft）**
 ```bash
 git reset --soft <commit-id>
 ```
@@ -424,7 +424,7 @@ git reset --soft <commit-id>
 
 ---
 
-## ✅ 2. **混合（Mixed）【默认模式】**
+## 2. **混合（Mixed）【默认模式】**
 ```bash
 git reset --mixed <commit-id>
 ```
@@ -447,7 +447,7 @@ git reset --hard <commit-id>
 
 ---
 
-## ✅ 4. **保留（Keep）**
+## 4. **保留（Keep）**
 ```bash
 git reset --keep <commit-id>
 ```
@@ -520,3 +520,18 @@ git reset --keep <commit-id>
 
 
 ![image-20250723000435674](./assets/image-20250723000435674.png)
+
+
+
+
+
+# 常见问题：
+
+```
+vim /etc/ssh/sshd_config
+// 找到 PubkeyAuthentication
+PubkeyAuthentication yes    
+##（原先这里是no，开启后问题就解决了）
+```
+
+重启 service sshd restart
