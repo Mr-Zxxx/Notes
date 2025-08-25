@@ -206,8 +206,8 @@ ssh -T git@github.com
 ### 二、配置 Git 用户信息（若未设置）
 
 ```
-git config --global user.name "Your Name"
-git config --global user.email "your_email@example.com"
+git config --global user.name "Mrz"
+git config --global user.email "zxx-0714@qq.com"
 ```
 
 > **重要**：邮箱需与 [GitHub 账户邮箱](https://github.com/settings/emails) 一致，否则贡献统计无法关联！
@@ -231,7 +231,7 @@ git config --global user.email "your_email@example.com"
    git push -u origin main  # 首次推送需加 `-u`
    ```
 
-#### 场景 2：关联已有本地仓库
+#### 场景 2：关联已有本地仓库 
 
 ```
 git remote add origin git@github.com:your-username/repo-name.git
